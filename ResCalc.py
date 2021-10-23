@@ -4,9 +4,9 @@ import ResFunction
 resistor = '\033[0;31;40m resistor'
 
 print(f'''
-...welcom to{resistor}\033[0;37;40m calculator...
-Operation number one parallel resistor *1*
-Operation number two Series resistor *2*
+    ...welcom to{resistor}\033[0;37;40m calculator...
+    Operation number one parallel resistor *1*
+    Operation number two Series resistor *2*
 ''')
 
 
@@ -20,4 +20,7 @@ if opration == '1':
 elif opration == '2':
     ResFunction.SeriesRes(float(Res1), float(Res2))
 else:
-    print('\033[0;31;43m Error Please enter a valid opration (1 or 2)')
+    print('\033[0;31;43m Error Please enter a valid opration (1 or 2) \033[0;37;40m')
+
+
+print('\033[0;36;40m Credit : Ali Azarafza \033[0;37;40m')
