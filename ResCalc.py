@@ -1,4 +1,8 @@
 import ResFunction
+import argparse
+
+
+
 
 
 resistor = '\033[0;31;40m resistor'
@@ -11,13 +15,15 @@ print(f'''
 
 
 opration = input('\033[0;34;40m number of the opration : ')
-Res1 = input('\033[0;36;40m The first resistance : ')
-Res2 = input('\033[0;36;40m The second resistance : ')
 
 
 if opration == '1':
+    Res1 = input('\033[0;36;40m The first resistance : \033[0;37;40m')
+    Res2 = input('\033[0;36;40m The second resistance : \033[0;37;40m')
     ResFunction.ParallelRes(float(Res1), float(Res2))
 elif opration == '2':
+    Res1 = input('\033[0;36;40m The first resistance : \033[0;37;40m')
+    Res2 = input('\033[0;36;40m The second resistance : \033[0;37;40m')
     ResFunction.SeriesRes(float(Res1), float(Res2))
 else:
     print('\033[0;31;43m Error Please enter a valid opration (1 or 2) \033[0;37;40m')
