@@ -16,8 +16,8 @@ Res2 = input('\033[0;36;40m The second resistance : ')
 
 
 if opration == '1':
-    ResFunction.ParallelRes(int(Res1), int(Res2))
+    ResFunction.ParallelRes(float(Res1), float(Res2))
 elif opration == '2':
-    ResFunction.SeriesRes(int(Res1), int(Res2))
+    ResFunction.SeriesRes(float(Res1), float(Res2))
 else:
     print('\033[0;31;43m Error Please enter a valid opration (1 or 2)')
