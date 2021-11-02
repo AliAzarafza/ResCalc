@@ -1,14 +1,23 @@
 import ResFunction
 import argparse
+import os
+
+# parser = argparse.ArgumentParser()
+# parser.add_argument()
+
+def clearConsole():
+    command = 'clear'
+    if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls
+        command = 'cls'
+    os.system(command)
+
+clearConsole()
 
 
-
-
-
-resistor = '\033[0;31;40m resistor'
+resistor = '\033[0;31;40m resistor\033[0;37;40m'
 
 print(f'''
-    ...welcom to{resistor}\033[0;37;40m calculator...
+    ...welcom to{resistor} calculator...
     Operation number one parallel resistor *1*
     Operation number two Series resistor *2*
 ''')
