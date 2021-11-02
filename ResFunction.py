@@ -9,11 +9,11 @@ def truncate(num, n):
 def ParallelRes(res1,res2):
     resv = ((res1 * res2) / (res1 + res2))
     resv = truncate(resv, 4)
-    print(f'\033[0;34;47m The resistance value is equal to = {resv} \033[0;34;40m')
+    print(f'\033[0;34;47m The \033[0;31;47mresistance\033[0;34;47m value is equal to = {resv} \033[0;34;40m')
 
 
 def SeriesRes(res1,res2):
     resv = (res1 + res2)
     resv = truncate(resv, 4)
-    print(f'\033[0;34;47m The resistance value is equal to = {resv} \033[0;34;40m')
+    print(f'\033[0;34;47m The \033[0;31;47mresistance\033[0;34;47m value is equal to = {resv} \033[0;34;40m')
 
